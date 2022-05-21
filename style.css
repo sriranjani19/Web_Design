@@ -1,0 +1,54 @@
+.headerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: bisque;
+    border: 4px solid navajowhite;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 30px;
+    padding:15px;
+    }
+    body{
+        width: 100%;
+        max-width: 600px;
+        margin: 0px auto;
+        padding: 2em;
+        background-color: rgba(228, 185, 185, 0.425);
+    }
+    html,input{
+    font-family: sans-serif;
+    }
+    form{
+        margin-top: 50px;
+    }
+    div{
+        margin-bottom: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    label{
+        width: 50%;
+    }
+    label{
+        text-align: right;
+        width: 30%;
+        margin-right:2%;
+    }
+    input, label, button{
+        font-size: 16px;
+        width: 30%;
+        margin-right: 2%;
+    }
+    button{
+        width: 70%;
+        margin: auto;
+    }
+    error-output{
+        font-size: 12px;
+        font-style: italic;
+        color: red;
+    
+    }
+s    

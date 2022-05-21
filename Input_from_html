@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input_Form</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    
+    
+</head>
+<body>
+    <form>
+    <header class="headerContainer">HTML 5 Form Input Fields</header>
+    <div>
+        <label for="Fname">Enter your First name:- </label>
+        <input type="text" id="Fname" fname="Fname" placeholder="Enter First Name" required="Enter your name"><br>
+
+        <label for="Lname">Enter your Last name:- </label>
+        <input type="text" id="Lname" Lname="Lname" placeholder="Enter Last Name" required="Enter your name"><br>
+
+        <label for="Pswd">Enter your Password:- </label>
+        <input type="password" id="Pswd" name="Pswd" placeholder="Enter valid password" ><br>
+
+        <label for="Email">Enter your Email-Id:- </label>
+        <input type="text" id="Email" name="Email" placeholder="Enter Email" ><br>
+
+        <label for="PhoneNumber">Enter your Contact Number:- </label>
+        <input type="number" id="PhoneNumber" name="PhoneNumber" placeholder="Enter Here" ><br>
+
+        <label for="url">Enter url link :- </label>
+        <input type="text" id="url" name="url" placeholder="Enter url Here" ><br>
+
+        <label for="SearchInput">Enter search input:- </label>
+        <input type="text" id="SearchInput" name="SearchInput" placeholder="put here searchable input" ><br>
+
+        <label for="DateTime">select Date & Time:- </label>
+        <input type="datetime-local" id="DateTime" name="DateTime" ><br>
+
+        <label for="salary">Choose a salary:- </label>
+        <input type="range" id="salary" name="salary" max="50000" min="15000" value="25000" ><br>
+        
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+
+    </div>
+    </form>
+    <script>
+        const text=document.querySelector("#text");
+        const textError=document.querySelector('.text-error');
+        text.addEventListener('input',function(){
+            let FnameRegex=RegExp('^[A-Z]{1}[a-z]{4,}$');
+            if (FnameRegex.test(test.value))
+            textError.textContent="";
+            else
+            textError.textContent="First Name is InCorrect";
+        });
+
+        const text2=document.querySelector("#text2");
+        const textError2=document.querySelector('.text2-error');
+        text.addEventListener('input',function(){
+            let LnameRegex=RegExp('^[A-Z]{1}[a-z]{4,}$');
+            if (LnameRegex.test(test.value))
+            text2Error.textContent="";
+            else
+            tex2Error.textContent="Last Name is invalid";
+        });
+
+        const text3=document.querySelector("#text3");
+        const textError3=document.querySelector('.text3-error');
+        text.addEventListener('input',function(){
+            let PasswordRegex=RegExp('^[A-Z]{1}[a-z]{4,}[@][0-9]{3,}$');
+            if (PasswordRegex.test(test.value))
+            text3Error.textContent="";
+            else
+            text3Error.textContent="Invalid Password";
+        });
+
+        const text4=document.querySelector("#text4");
+        const textError4=document.querySelector('.text4-error');
+        text.addEventListener('input',function(){
+            let GmailRegex=RegExp('^/[A-Za-z]{3,}[@gmail][.com]$');
+            if (GmailRegex.test(test.value))
+            text4Error.textContent="";
+            else
+            text4Error.textContent="Invalid E-Mail";
+        });
+
+        const text5=document.querySelector("#text5");
+        const textError5=document.querySelector('.text5-error');
+        text.addEventListener('input',function(){
+            let PhoneRegex=RegExp('^[9]{1}[1]{1}[8-9]{1}[0-9]{9}$');
+            if (PhoneRegex.test(test.value))
+            tex5Error.textContent="";
+            else
+            text5Error.textContent="Check PhoneNumber";
+        });
+
+        const text6=document.querySelector("#text6");
+        const textError6=document.querySelector('.text6-error');
+        text.addEventListener('input',function(){
+            let urlRegex=RegExp('^[A-Za-z]{3,}}$');
+            if (urlRegex.test(test.value))
+            text6Error.textContent="";
+            else
+            text6Error.textContent="Invalid!";
+        });
+
+
+        const text7=document.querySelector("#text7");
+        const textError7=document.querySelector('.text7-error');
+        text.addEventListener('input',function(){
+            let SearchRegex=RegExp('^[A-Za-z]{3,}}$');
+            if (SearchRegex.test(test.value))
+            text7Error.textContent="";
+            else
+            text7Error.textContent="Not Match!";
+        });
+
+        const salary=document.querySelector('#salary');
+        const output=document.querySelector('.salary-output');
+        output.textContent=salary.value;
+        output.addEventListener('input',function(){
+            output.textContent=salary.value;        
+        });
+    </script>
+</body>
+</html>s

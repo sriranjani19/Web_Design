@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>FlexBox_Demo_Tutorial</title>
+      <style>
+          body{
+              padding: 2em;
+          }
+          .headerContainer{
+              display: flex;
+              flex-flow: column wrap;
+              align-content: center;
+              background:navajowhite;
+              font-weight: bold;
+              padding: 5px;
+          }
+          .mainContainer{
+              display: flex;
+              flex-flow: row wrap;
+              font-weight: bold;
+              text-align: center;
+          }
+        
+          .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+          .sideBarLeftItem{ background: gold; }
+         .sideBarRightItem{ background: hotpink; }
+
+         .sideBarItem { flex: 1 0 0; border: 0px solid green; }
+         .mainContentItem { flex: 3 0px; }   
+         .sideBarLeftItem { order: 1; }
+         .mainContentItem { order: 2; }
+         .sideBarRightItem{ order: 3; }
+
+         article{
+             padding: 10px;
+             margin: 10px;
+             background: aqua;
+         }
+
+      </style>
+    </head>
+    <body>
+
+        <header class="headerContainer"><h3>HEADER-Sample Flexbox Example</h3></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                <h3>First_Articles</h3>
+                <p>
+                    Career goals are targets. Things, positions, situations related to your professional life that
+                     you have set your mind on achieving. They can be short-term, like getting a promotion or certification, 
+                     or they can be long-term.
+                </p>
+                <h3>Second_Articles</h3>
+                <p>
+                    Career goals are targets. Things, positions, situations related to your professional life that
+                     you have set your mind on achieving. They can be short-term, like getting a promotion or certification, 
+                     or they can be long-term.
+
+                </p>
+                <h3>Third_Articles</h3>
+                <p>
+                    Career goals are targets. Things, positions, situations related to your professional life that
+                     you have set your mind on achieving. They can be short-term, like getting a promotion or certification, 
+                     or they can be long-term.
+
+                </p>
+            </article>
+             </section>
+             <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+             
+             <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer fotr">Footer</footer>
+
+    </body>
+</html>
